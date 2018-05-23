@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Disable Privacy Tools
- * Version: 1.0
+ * Version: 1.1
  * Description: Disables core's privacy tools including tools for exporting/erasing personal data.
  * Author: Dominik Schilling
  * Author URI: https://dominikschilling.de/

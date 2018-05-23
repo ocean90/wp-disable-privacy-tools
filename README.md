@@ -4,7 +4,7 @@ Tags:              privacy, gdpr, tools, core
 Requires at least: 4.9  
 Tested up to:      5.0  
 Requires PHP:      5.2  
-Stable tag:        1.0  
+Stable tag:        1.1  
 License:           GPLv2 or later  
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -20,3 +20,14 @@ Depending on your location or type of install (the tools may not be suitable for
 With this plugin, all the new admin screens will be disabled to prevent cluttering your admin with more unused items. It also prevents showing you the feature pointer if you install this plugin before the update.
 
 *Photo by [Dayne Topkin](https://unsplash.com/photos/0FOOcD63bek).*
+
+## Changelog
+
+### 1.1
+
+- Removes the default scheduled event used to delete old export files. Props [jeremyfelt](https://profiles.wordpress.org/jeremyfelt).
+
+### 1.0
+
+- Removes core privacy tools by adding the `do_not_allow` capability.
+- Short circuits the option for the privacy policy page.
