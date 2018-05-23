@@ -58,3 +58,14 @@ add_filter( 'map_meta_cap', 'ds_disable_core_privacy_tools', 10, 2 );
  * The option is used by get_privacy_policy_url() among others.
  */
 add_filter( 'pre_option_wp_page_for_privacy_policy', '__return_zero' );
+
+/**
+ * Removes the default scheduled event used to delete old export files.
+ */
+remove_action( 'init', 'wp_schedule_delete_old_privacy_export_files' );
+
+/**
+ * Removes the hook attached to the default scheduled event for removing
+ * old export files.
+ */
+remove_action( 'wp_privacy_delete_old_export_files', 'wp_privacy_delete_old_export_files' );
