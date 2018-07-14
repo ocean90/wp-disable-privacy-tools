@@ -69,3 +69,13 @@ remove_action( 'init', 'wp_schedule_delete_old_privacy_export_files' );
  * old export files.
  */
 remove_action( 'wp_privacy_delete_old_export_files', 'wp_privacy_delete_old_export_files' );
+
+/**
+ * Removes scheduled background hook cron used to delete old export files.
+ *
+ * @author Luciano Croce @ profiles.wordpress.org/luciano.croce
+ */
+function privacy_tools_scheduled_cron() {
+	wp_clear_scheduled_hook( 'wp_privacy_delete_old_export_files' );
+}
+add_action( 'admin_init', 'privacy_tools_scheduled_cron' );
