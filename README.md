@@ -1,8 +1,8 @@
 # Disable Privacy Tools
 Contributors:      ocean90  
-Tags:              privacy, gdpr, tools, core 
+Tags:              privacy, gdpr, tools, core  
 Requires at least: 4.9  
-Tested up to:      5.0  
+Tested up to:      5.9  
 Requires PHP:      5.2  
 Stable tag:        1.1  
 License:           GPLv2 or later  
